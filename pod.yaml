@@ -20,7 +20,7 @@ metadata:
   name: meupod2
   labels:
     app: web
-    versao: kubedevio/web-color:green
+    versao: green
 spec:
   containers:
     - name: web
