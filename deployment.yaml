@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web
 spec:
-  replicas: 10
+  replicas: 200
   selector:
     matchLabels:
       app: web
@@ -32,5 +32,6 @@ spec:
       targetPort: 80
       name: http
       protocol: TCP
-  type: ClusterIP
+      nodePort: 30000
+  type: NodePort
 
